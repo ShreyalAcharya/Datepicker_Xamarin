@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App2"
+             x:Class="App2.MainPage">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Label Text="Welcome to Xamarin.Forms!"  />
+        <DatePicker IsVisible="False" x:Name="Date" DateSelected="Date_OnDateSelected"></DatePicker>
+        <Entry HorizontalOptions="FillAndExpand" VerticalOptions="Fill" x:Name="TextEntry" Focused="Text_OnFocused" Placeholder="Select date"></Entry>
+        <Label x:Name="LblReset" Text="X" FontSize="17"  FontAttributes="Bold" TextColor="Red" HorizontalOptions="Center" VerticalTextAlignment="Center">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="Reset_OnTapped"></TapGestureRecognizer>
+            </Label.GestureRecognizers>
+        </Label>
+    </StackLayout>
+
+</ContentPage>
